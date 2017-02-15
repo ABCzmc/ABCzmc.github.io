@@ -277,11 +277,21 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/02/15/http协议/">http协议</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>###http协议</p>
-<h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
+        <h4 id="基础概念"><a href="#基础概念" class="headerlink" title="基础概念"></a>基础概念</h4><ul>
 <li>HTTP协议( HyperText Transfer Protocol，超文本传输协议 ) 是用于从 WWW 服务器传输超文本到本地浏览器的传送协议。它可以使浏览器更加高效，使网络传输减少。它不仅保证计算机正确快速地传输超文本文档，还确定传输文档中的哪一部分，以及哪部分内容首先显示(如文本先于图形)等。</li>
 <li>HTTP是一个应用层协议，由请求和响应构成，是一个标准的客户端服务器模型。HTTP是一个无状态的协议。<h4 id="HTTP协议的主要特点可概括如下："><a href="#HTTP协议的主要特点可概括如下：" class="headerlink" title="HTTP协议的主要特点可概括如下："></a>HTTP协议的主要特点可概括如下：</h4><ul>
 <li>1.支持客户/服务器模式。</li>
@@ -329,7 +339,7 @@ PUT：在服务器上存放内容 (QQ空间相册,我们上传图片其实就可
   var xhr=new XMLHttpRequest;
   xhr.open(&apos;POST&apos;,&apos;/getAllList&apos;,true);
   xhr.onreadystatechange=function(){}
-  xhr.send(&apos;{&quot;name&quot;:&quot;zf&quot;,&quot;age&quot;:8}&apos;);//-&gt;SEND中存放的内容就是请求主体内容(一般传递给服务器的请求主体内容都是JSON格式的字符串)
+  xhr.send(&apos;{&quot;name&quot;:&quot;zmc&quot;,&quot;age&quot;:1}&apos;);//-&gt;SEND中存放的内容就是请求主体内容(一般传递给服务器的请求主体内容都是JSON格式的字符串)
 
 1)大小限制问题
   GET传给服务器的内容少,POST传递给服务器的内容多
@@ -339,7 +349,7 @@ PUT：在服务器上存放内容 (QQ空间相册,我们上传图片其实就可
 2)缓存问题
   GET请求经常出现默认的缓存(这个缓存是浏览器和服务器之间的一些猫腻,我们项目中一般是不想要这些缓存的,因为不可控,项目中真正使用的缓存都是我们使用相关技术去实现的),而POST请求浏览器不会给其默认进行缓存
   清除GET请求的缓存:在每一次请求的URL地址后面加随机数
-  xhr.open(&apos;GET&apos;,&apos;/getAllList?name=zf&amp;age=8&amp;_=&apos;+Math.random())；
+  xhr.open(&apos;GET&apos;,&apos;/getAllList?name=zmc&amp;age=1&amp;_=&apos;+Math.random())；
 
 3)安全问题
   GET请求相对于POST请求不太安全,因为GET请求把传递给服务器的内容放在URL上了,而有一种黑客手段叫做URL劫持,可以获取我们传递给服务器端的内容,所以项目中客户端如果需要传递一个重要信息给服务器我们一般都使用POST请求,例如：用户登录的用户名密码我们就是POST请求给服务器的
@@ -449,6 +459,17 @@ PUT：在服务器上存放内容 (QQ空间相册,我们上传图片其实就可
     
       <input type="hidden" class="isFancy" />
     
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/01/在ghithub上结合hexo搭建自己的博客网站/">搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
